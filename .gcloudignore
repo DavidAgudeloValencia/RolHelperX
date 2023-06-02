@@ -1,0 +1,30 @@
+# The .gcloudignore file excludes file from upload to Cloud Build.
+# If this file is deleted, gcloud will default to .gitignore.
+#
+# https://cloud.google.com/cloud-build/docs/speeding-up-builds#gcloudignore
+# https://cloud.google.com/sdk/gcloud/reference/topic/gcloudignore
+
+# Exclude locally vendored dependencies.
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.env.production
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+/.fleet
+/.idea
+/.vscode
+
+
+# Exclude git history and configuration.
+.git/
+.gitignore
